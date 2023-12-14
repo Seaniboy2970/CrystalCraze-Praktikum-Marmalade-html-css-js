@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<head>
+    <div class="image-container">
+        <img src="gemlogo.jpg" alt="GemLogo" width="120px" height="120px">
+    </div>
+    
+    <title>Crystal Craze</title>
+    <script src="shop.js"></script>
+</head>
+<style>
+    .image-container {
+            position: absolute;
+            top: 70px;
+            left: 40px;
+    }
+ body {
+  background-image: url('backroundshop.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+    header {
+        margin-top: -10px;
+            margin-left: -10px;
+            margin-right: -10px;
+    background-color: 	#cdba96;
+    color: #3e3513;
+    padding: 30px;
+    text-align: center;
+}
+nav li {
+    display: inline;
+    margin-right: 40px;
+}
+.headerButoon{
+            color: rgb(62, 133, 87);
+            font-size: 20px;
+        }
+        #p{
+            color: rgb(24, 233, 111);
+        }
+.headerButoon:hover{
+    color: rgb(59, 182, 110);
+}
+h1{
+    font-size: 50px;
+}
+footer{
+            margin-bottom: -10px;
+            margin-left: -10px;
+            margin-right: -10px;
+            background-color: 	#cdba96;
+            color: #3e3513;
+            padding: 30px;
+            text-align: center;
+        
+        
+        }
+        #footerhome{
+            text-align: left;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+        }
+        .backtshop{
+            display: flex;
+            justify-content: flex-start;
+            text-decoration: none;
+            color: rgb(62, 133, 87);
+            font-size: 20px;
+
+
+        }
+        .backtshop:hover{
+            text-decoration: underline ;
+            color: rgb(59, 182, 110);
+
+        }
+        #achat{
+            margin-top: 2%;
+            margin-bottom: 2%;
+            margin-left: 2%;
+            margin-right: 2% ;
+            position: absolute;
+            top: 293px;
+            left: 20px;
+
+        }
+        .titel-achat{
+            font-size: 40px;
+            color: #FFD39B;
+            display: flex;
+            justify-content: center;
+        }
+        .dsc-achat{
+            border: 1px solid black;
+  margin-top: 150px;
+  margin-bottom: 240px;
+  margin-right: 5%;
+  margin-left: 50%;
+    background-color: 	#cdba96;
+    padding: 20px 40px;
+    text-align:center;
+
+        }
+        .dsc-text{
+            font-size: 20;
+            display: flex;
+            justify-content: left;
+
+        }
+        .dsc-wk{
+
+            font-weight: bolder;
+            font-size: 20px;
+
+
+        }
+        .dsc-info{
+            font-weight: bold;
+            font-size: 20;
+            text-align: left ;
+        }
+        .socialmedialink{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
+
+        }
+        .wk{
+            font-size: 20px;
+            background-color: #CDB38B;
+        }
+</style>
+<body>
+    <header>
+        <a  href="file:///home/marmalade/erstesprojekt/Produkte.html" class="backtshop"><b> 	&larr; Back</b></a>
+        <h1>Crystal Craze</h1>
+        <nav>
+            <ul>
+                <li><a id="s" href="file:///home/marmalade/erstesprojekt/erstesprojekt.html" class="headerButoon"><b>Startseite</b></a></li>
+                <li><a id="p" href="file:///home/marmalade/erstesprojekt/Produkte.html" class="headerButoon"><b>Produkte</b></a></li>
+                <li><a id="w" href="file:///home/marmalade/erstesprojekt/Warenkorb.html" class="headerButoon" onclick="wkanzeigen"><b>Warenkorb</b></a></li>
+            </ul>
+        </nav>
+
+    </header>
+    
+    <main>
+        <div class="titel-achat">
+            <h2><u><strong>Achat</strong></u></h2>
+        </div>
+        <img id="achat" src="achat.jpg" alt="Achat" width="700px" height="700px">
+
+
+        <div class="dsc-achat">
+            <p class="dsc-text">Entdecken Sie unsere handgefertigten Achat-Steine, geformt aus den besten <br></p>
+            <p class="dsc-text">Rohmaterialien der Natur. Jeder Stein wird von erfahrenen Handwerkern liebevoll <br></p>
+            <p class="dsc-text">geschnitten und poliert, um ein einzigartiges Unikat zu schaffen. Unsere Kollektion <br></p>
+            <p class="dsc-text">vereint kreative Designs mit höchster Qualität und legt dabei großen Wert auf <br></p>
+            <p class="dsc-text">Nachhaltigkeit. Tauchen Sie ein in die zeitlose Eleganz der Achat-Steine und lassen Sie <br></p>
+            <p class="dsc-text">sich von ihrer natürlichen Schönheit verführen.<br></p>
+            <p class="dsc-info"> <br>Masse: 1485 Karat - 297 Gramm<br> Farbe: Blau <br>Preis: 30€ </p>
+            <button id="wk-achat" class="wk" onclick="addachat()"> Achat zum Warenkorb hinzufügen</button>
+           
+
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <pre id="footerhome">
+
+            Straße und Hausnummer:      Weilburger Str. 35, 
+            PLZ Ort:                                  60326 Frankfurt am Main
+            Land:                                      Deutschland
+
+            Telefonnummer:                     +49 309 2837819
+
+            E-Mail:                                    crystalcraze@gems.com
+            
+        </pre>
+        <div class="socialmedialink">
+            <a href="https://www.instagram.com/crystalcraze.mgd/" class="fasma"><img class="Bild" src="Instagram.png"width="90px" height="90px";></a>
+            <a href="https://twitter.com/crystalcrazemgd" class="fasma"><img class="Bild" src="x-logo.jpg"width="90px" height="90px";></a>
+        </div>
+
+    </footer>
+    <script src="shop.js"></script>
+</body>
+</html>

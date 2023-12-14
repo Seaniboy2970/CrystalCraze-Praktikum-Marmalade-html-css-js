@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Craze Pay</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e5f4cd;
+            background-image: url('backroundshop.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+        .backtshop{
+            display: flex;
+            justify-content: flex-start;
+            text-decoration: none;
+            color: rgb(62, 133, 87);
+            font-size: 23px;
+
+
+        }
+        .backtshop:hover{
+            text-decoration: underline ;
+            color: rgb(59, 182, 110);
+
+        }
+
+        header {
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 11%;
+    background-color: 	#cdba96;
+    color: #3e3513;
+    padding: 30px;
+    text-align: center;
+        }
+        h1{
+    font-size: 50px;
+        }
+        section {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #92d35d;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            background-color: #e5f4cd;
+        }
+
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a  href="file:///home/marmalade/erstesprojekt/Warenkorb.html" class="backtshop"><b> 	&larr; Back</b></a>
+    <h1>Crystal Craze</h1>
+</header>
+
+<section>
+    <h2>Bezahlen</h2>
+    <form id="paymentForm">
+        <label for="name">Name auf der Karte:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="cardNumber">Karten Nummer:</label>
+        <input type="text" id="cardNumber" name="cardNumber" required>
+
+        <label for="expiryDate">Ablaufsdatum:</label>
+        <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY" required>
+
+        <label for="cvv">CVC/Prüfnummer:</label>
+        <input type="text" id="cvv" name="cvv" required>
+
+        <button type="button" onclick="processPayment()">Jetzt bezahlen</button>
+    </form>
+</section>
+
+<script>
+    function processPayment() {
+        
+        // Add your payment processing logic here
+        // This is where you would typically make a request to a server to process the payment
+        alert('Kauf erfolgreich abgeschlossen!');
+    }
+</script>
+
+</body>
+</html>
